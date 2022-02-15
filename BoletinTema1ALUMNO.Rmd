@@ -148,10 +148,13 @@ e.  Usa **setdiff** para averiguar qué animales no están en ambos conjuntos. �
 
 ```{r}
 
-AnimalesNoEstan <- setdiff(mammals_row, animals2_row)
-AnimalesNoEstan
+AnimalesNoEstan1 <- setdiff(mammals_row, animals2_row)
+AnimalesNoEstan1
 
-#Podemos observar que hay 4 animales que no estan en ninguno de los dos conjuntos, los cuales son animales que en general son "bastante pequeños"
+AnimalesNoEstan2 <- setdiff(animals2_row, mammals_row)
+AnimalesNoEstan2
+
+#Podemos observar que hay 4 animales que no estan en ninguno de los dos conjuntos en el primer caso, mientras que en el segundo caso hay 8 animales que no estan, siendo animales muy variados"
 
 ```
 
@@ -159,7 +162,7 @@ e.  Determina las diferencia entre los animales que no aparecen en ambos conjunt
 
 ```{r}
 
-#Podemos observar que tanto como el  "Arctic fox" y "Arctic ground squirrel" son dos animales mamiferos que viven en el artico (clima frio) mientras que el "Patas monkey" vive en climas calidos y el "Mole rat" tiende a vivir en ambientes subterraneos.
+#Podemos observar que los animales que no aparecen en ambos conjuntos es debido a que se han escrito de manera diferente en uno y en otro como en el caso de: "Artic fox" y "Arctic fox"
 
 
 ```
