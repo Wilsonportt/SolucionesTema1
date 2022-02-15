@@ -202,12 +202,6 @@ car::qqPlot(brain_weights_animals2)
     length(libReturn)
 
 
-
-
-
-
-
-
     ```
 
 4.  En las transparencias del tema 1 se citan los primeros pasos a seguir cuando se analiza un nuevo conjunto de datos.
@@ -219,31 +213,30 @@ car::qqPlot(brain_weights_animals2)
 
 ```{r}
 
+#a
 
+head(cabbages)
+dim(cabbages)
+tail(cabbages)
+glimpse(cabbages)
 
+#b
 
+colSums(sapply(cabbages, is.na))
 
+#c
 
+head(Chile)
+dim(Chile)
+tail(Chile)
+glimpse(Chile)
+is.na(Chile)
+colSums(sapply(Chile, is.na))
 
+#d
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+summary(cabbages)
+summary(Chile)
 
 ```
 
