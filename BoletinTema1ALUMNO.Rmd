@@ -171,6 +171,14 @@ e.  Determina las diferencia entre los animales que no aparecen en ambos conjunt
 
 ```{r}
 
+brain_weights_mammals <- log(mammals$brain)
+brain_weights_animals2 <- log(Animals2$brain)
+
+car::qqPlot(brain_weights_mammals)
+car::qqPlot(brain_weights_animals2)
+
+#Podemos observar que presentan el mismo comportamientos ya que ambas estan dentro del rango de las lineas discontinuas y porque tanto siguen una distribucion gaussiana
+
 
 ```
 
