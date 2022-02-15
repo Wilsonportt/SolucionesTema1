@@ -189,8 +189,17 @@ car::qqPlot(brain_weights_animals2)
     c.  Determina el número de librerías que tienes instaladas.
 
     ```{r}
+    #a
 
+    libReturn <- library()
+    libReturn
 
+    #b
+    head(libReturn[[2]][1:5])
+
+    #c
+    str(libReturn)
+    length(libReturn)
 
 
 
