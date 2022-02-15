@@ -90,11 +90,56 @@ package.check <- lapply(packages, FUN = function(x) {
 
 ```{r}
 
+#1 Cargamos los conjuntos de datos que usaremos
+
+data(package = "MASS", topic = "mammals")
+data(package = "robustbase", topic = "Animals2")
+
+#2 Miramos las caracteristicas de cada conjunto de datos con help
+
+help(package = "MASS", topic = "mammals")
+help(package = "robustbase", topic = "Animals2")
+
+#3 Aplicamos las funciones  dim(), head(), tail() y str()
+
+#MASS::mammals
+dim(MASS::mammals)
+head(MASS::mammals)
+tail(MASS::mammals)
+str(MASS::mammals)
+#robustbase::Animals2
+dim(robustbase::Animals2)
+head(robustbase::Animals2)
+tail(robustbase::Animals2)
+str(robustbase::Animals2)
+
+#4 Mostramos el nombre de las filas y las columnas de cada conjutno de datos
+
+#MASS::mammals
+
+mammals_row <- rownames(MASS::mammals)
+mammals_row
+
+mammals_col <- colnames(MASS::mammals)
+mammals_col
+
+#robustbase::Animals2
+
+animals2_row <- rownames(robustbase::Animals2)
+animals2_row
+
+animals2_col <- colnames(robustbase::Animals2)
+animals2_col
+
 ```
 
 d.  Usa la función **intersect** y almacena en la variable *commonAnimals* los aminales que aparezcan en ambos conjuntos
 
 ```{r}
+
+commonAnimals <- intersect(mammals_row, animals2_row)
+#Los animales que aparecen en ambos conjuntos son
+commonAnimals
 
 
 ```
@@ -103,12 +148,18 @@ e.  Usa **setdiff** para averiguar qué animales no están en ambos conjuntos. �
 
 ```{r}
 
+AnimalesNoEstan <- setdiff(mammals_row, animals2_row)
+AnimalesNoEstan
+
+#Podemos observar que hay 4 animales que no estan en ninguno de los dos conjuntos, los cuales son animales que en general son "bastante pequeños"
 
 ```
 
 e.  Determina las diferencia entre los animales que no aparecen en ambos conjuntos.
 
 ```{r}
+
+#Podemos observar que tanto como el  "Arctic fox" y "Arctic ground squirrel" son dos animales mamiferos que viven en el artico (clima frio) mientras que el "Patas monkey" vive en climas calidos y el "Mole rat" tiende a vivir en ambientes subterraneos.
 
 
 ```
