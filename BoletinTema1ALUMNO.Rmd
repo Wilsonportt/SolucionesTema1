@@ -244,8 +244,10 @@ summary(Chile)
 
 ```{r}
 
+qqPlot(cabbages$HeadWt)
+qqPlot(cabbages$VitC)
 
-
+#Como en ambos casos los valores (Puntos) se encuentran dentro del rango de las lineas discontinuas podemos verificar que cumplen una distribucion gaussiana
 
 
 ```
