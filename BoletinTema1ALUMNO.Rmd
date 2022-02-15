@@ -1,8 +1,8 @@
 ---
 title: "Boletín Tema 1"
 subtitle: Tratamiento de Datos. Grado en Ciencia de Datos- UV
-author: "Marcelino Martínez"
-date:  "`r Sys.Date()`"  #Pondría la fecha del día actual
+author: "Wilson Paul Portillo"
+date:  "15/02/2022"  
 params:
   lang: ES
 lang: "`r switch(params$lang, ES = 'es-ES', EN = 'en-US')`"
@@ -84,40 +84,17 @@ package.check <- lapply(packages, FUN = function(x) {
 ```
 
 1.  Considera los conjuntos de datos **mammals** del paquete **MASS** y **Animals2** del paquete **robustbase**.
-
-<!-- -->
-
-a.  Mira la las características de ambos conjuntos usando la ayuda.
-b.  Usa las funciones **dim, head, tail, str** para una primera visión de los conjuntos de datos.
-c.  Muestra los nombres de las filas y las columnas (**rownames**, **colnames**)
+2.  Mira la las características de ambos conjuntos usando la ayuda.
+3.  Usa las funciones **dim, head, tail, str** para una primera visión de los conjuntos de datos.
+4.  Muestra los nombres de las filas y las columnas (**rownames**, **colnames**)
 
 ```{r}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ```
 
 d.  Usa la función **intersect** y almacena en la variable *commonAnimals* los aminales que aparezcan en ambos conjuntos
 
 ```{r}
-
-
-
-
 
 
 ```
@@ -127,25 +104,11 @@ e.  Usa **setdiff** para averiguar qué animales no están en ambos conjuntos. �
 ```{r}
 
 
-
-
-
-
 ```
 
 e.  Determina las diferencia entre los animales que no aparecen en ambos conjuntos.
 
 ```{r}
-
-
-
-
-
-
-
-
-
-
 
 
 ```
