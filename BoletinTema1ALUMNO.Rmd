@@ -307,19 +307,11 @@ b.  Repite el apartado anterior, pero obteniendo un modelo para cada una de las 
 
 ```{r}
 
+ggplot(cabbages, aes(Cult[1],VitC,HeadWt)) +
+  geom_point() 
 
-
-
-
-
-
-
-
-
-
-
-
-
+ggplot(cabbages, aes(Cult[2],VitC,HeadWt)) +
+  geom_point() 
 
 
 ```
