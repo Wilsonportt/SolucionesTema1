@@ -192,7 +192,7 @@ car::qqPlot(brain_weights_animals2)
     #a
 
     libReturn <- library()
-    libReturn
+
 
     #b
     head(libReturn[[2]][1:5])
@@ -255,8 +255,11 @@ qqPlot(cabbages$VitC)
 6.  Una representación habitual, para determinar la distribución de los datos de una variable cuantitativa es el histograma (**hist**). Determina, de forma aproximada, utilizando el histograma, si hay diferencias entre los contenidos de vitamina C (**VitC**), para las diferentes variedades de calabaza (variable **Cult**), en el conjunto de datos **cabbages**.
 
 ```{r}
-
-
+Variedad <- data.frame(cabbages$Cult)
+Variedad
+VitaminaC <- cabbages$VitC
+hist(VitaminaC, col = "lightblue")
+#hist(Variedad, col = "lightblue")
 
 ```
 
